@@ -21,6 +21,21 @@ nav {
     margin-bottom: 5vh;
 }
 
+label {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 7px;
+    border-radius: 7px;
+    border: 1px solid #363333;
+    text-align: center;
+    width: 100%;
+}
+
+
 .container {
     display: flex;
     flex-direction: column;
@@ -49,24 +64,44 @@ nav {
     padding: 10px;
 }
 
-label {
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 5px;
+.instrucao{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
-input {
-    padding: 7px;
-    border-radius: 7px;
-    border: 1px solid #363333;
-    text-align: center;
+.instrucao2{  
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #08acc2;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+    margin: 5px 0; /* Reduzindo o espaço vertical */
+}
+
+.navdiv{
+    display: flex;
+    align-items: center;
     width: 100%;
+    justify-content: space-between;
 }
 
-@media (max-width: 400px) {
-    .input_group {
-        width: 100%;
-    }
+
+.restricoes{
+    color: white;
+    border-radius: 10px;
+}
+
+.autor{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    color: rgb(204, 195, 189);
+    width: 100%;
+    justify-content: right;
+    margin-top: 100px;
+    margin-right: 100px;
 }
 
 #img_sptech {
@@ -103,34 +138,11 @@ opacity: 80%;
 cursor: pointer;
 }
 
-.navdiv{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-}
-
 #titulo{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #c2af08;
 }
 
-.instrucao{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    
-}
-
-.instrucao2{  
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #08acc2;
-    padding-right: 10px;
-    padding-left: 10px;
-    border-radius: 10px;
-    margin: 5px 0; /* Reduzindo o espaço vertical */
-}
 
 #p_comousar{
     color: rgb(32, 32, 32);
@@ -145,17 +157,8 @@ cursor: pointer;
     margin: 5px 0; /* Reduzindo o espaço vertical */;
 }
 
-.restricoes{
-    color: white;
-    border-radius: 10px;
-}
-
-.autor{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    display: flex;
-    color: rgb(204, 195, 189);
-    width: 100%;
-    justify-content: right;
-    margin-top: 100px;
-    margin-right: 100px;
+@media (max-width: 400px) {
+    .input_group {
+        width: 100%;
+    }
 }
